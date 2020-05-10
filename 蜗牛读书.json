@@ -1,0 +1,26 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "tradeEndTime\":1594310400000",
+      "matchValue" : "tradeEndTime\":\\d+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "name" : "蜗牛读书by decrease",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "p.du.163.com",
+      "path" : "\/gain\/readtime\/info.json"
+    }
+  ]
+}
