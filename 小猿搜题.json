@@ -1,0 +1,35 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip\": true",
+      "matchValue" : "vip\":\\s*\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expireTime\": 1602070768000",
+      "matchValue" : "expireTime\":\\s*\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "name" : "小猿搜题by decrease",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "*",
+      "host" : "xyst.yuanfudao.com",
+      "path" : "\/solar-vip\/iphone\/users\/369968378"
+    }
+  ]
+}
