@@ -29,7 +29,7 @@
       "port" : 443,
       "query" : "*",
       "host" : "xyst.yuanfudao.com",
-      "path" : "\/solar-vip\/iphone\/users\/369968378"
+      "path" : "\/solar-vip\/iphone\/users\/*"
     }
   ]
 }
