@@ -1,0 +1,80 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isVip\": true",
+      "matchValue" : "isVip\"\\s*:\\s*\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "vip_end_time\": \"2020-10-16",
+      "matchValue" : "vip_end_time\"\\s*:\\s*\"\\d{4}-\\d{2}-\\d{2}",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "expireTime\": \"2020-10-16",
+      "matchValue" : "expireTime\"\\s*:\\s*\"\\d{4}-\\d{2}-\\d{2}",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\": true",
+      "matchValue" : "is_vip\"\\s*:\\s*\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "can_read\": true",
+      "matchValue" : "can_read\":\\s*\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "name" : "豆瓣读书 by decrease",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "read.douban.com",
+      "path" : "\/j\/graphql"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "read.douban.com",
+      "path" : "\/api\/v2\/people"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "*",
+      "host" : "read.douban.com",
+      "path" : "\/api\/v2\/vip_index"
+    }
+  ]
+}
