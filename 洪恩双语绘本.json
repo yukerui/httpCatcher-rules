@@ -1,0 +1,26 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "is_vip\": 0",
+      "matchValue" : "is_vip\"\\s*:\\s*\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "name" : "洪恩 by decrease",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "bookapi.ihuman.com",
+      "path" : "\/v3\/get_book_info"
+    }
+  ]
+}
