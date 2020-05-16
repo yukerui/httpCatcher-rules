@@ -1,0 +1,35 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "purchaseStatus\": 1",
+      "matchValue" : "purchaseStatus\":\\s*\\d",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "name" : "即刻运动 by decrease",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "*",
+      "host" : "ec.fit-time.com",
+      "path" : "\/ftec\/checkProgramPurchase"
+    },
+    {
+      "method" : "POST",
+      "scheme" : "http",
+      "enabled" : true,
+      "port" : 80,
+      "query" : "token=31bJegIn06Q4PO05iLW84N0igwYzxt8TUW71BT7ugcdsrFTIr%2BerBw%3D%3D&device_id=D7E5345A-8386-40BA-BD24-52B4132A3207&client=ios&idfa=F1D3076E-349A-4FC2-9CC2-9CB8266BB6DA&lat=32.50354829647092&lon=116.1739566799568&os=iOS%2013.4.1&model=iPhone8%2C1&ver=3.3.4&channel=iOS",
+      "host" : "ec.fit-time.com",
+      "path" : "\/ftec\/checkTrainingPlanPurchase"
+    }
+  ]
+}
