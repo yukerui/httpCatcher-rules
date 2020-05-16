@@ -8,4 +8,4 @@ httpCathcer规则，需要其他规则开个issues。
 [教程地址](https://blog.930113.xyz), 救救孩子吧，博客根本没人看
 
 不会提issues的可以来群里聊聊，qq群号：1034788765
-[![Yyo0vd.jpg](https://s1.ax1x.com/2020/05/16/Yyo0vd.jpg)](https://imgchr.com/i/Yyo0vd)
+[![qq群](https://s1.ax1x.com/2020/05/16/Yyo0vd.jpg)](https://imgchr.com/i/Yyo0vd)
