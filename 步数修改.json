@@ -1,0 +1,26 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "step\": \"8888",
+      "matchValue" : "step\":\\s*\"\\d+",
+      "destiontion" : "request",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "name" : "步数修改 by lovexl",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "*",
+      "host" : "sports.lifesense.com",
+      "path" : "\/sport_service\/sport\/sport\/uploadMobileStepV2"
+    }
+  ]
+}
