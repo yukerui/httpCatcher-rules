@@ -1,0 +1,28 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "\"is_free\":true",
+      "matchValue" : "\"is_free\"\\s*:\\s*false",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "isReadOnly" : false,
+  "name" : "口袋故事",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "method=audio.getAudioInfo",
+      "host" : "47.102.23.164",
+      "path" : "\/api.php\/"
+    }
+  ],
+  "description" : ""
+}
