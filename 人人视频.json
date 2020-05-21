@@ -1,0 +1,71 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "canPlay\": true",
+      "matchValue" : "canPlay\":\\s*\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "canShowVip\": false",
+      "matchValue" : "canShowVip\":\\s*\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "externalAds\": false",
+      "matchValue" : "externalAds\":\\s*\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "modify-query",
+      "matchField" : "quality",
+      "field" : "",
+      "value" : "OD",
+      "matchValue" : "",
+      "destiontion" : "request",
+      "isRegex" : false
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "currentQuality\": \"OD",
+      "matchValue" : "currentQuality\":\\s*\"\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "name" : "人人视频",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "*",
+      "host" : "api.rr.tv",
+      "path" : "\/watch\/v4\/priority_video_quality\/get_priority_video_quality_config"
+    },
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "*",
+      "host" : "api.rr.tv",
+      "path" : "\/watch\/v1\/get_movie_info"
+    }
+  ]
+}
