@@ -1,0 +1,26 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "{\"service\": 1,\"payYear\": \"true\",\"end\": \"4100688000000\",\"um\": {\"nn\":\"lovexl\",\"q\": 3225419776,\"u\": 31360,\"dp\": 0,\"dq\": 100}}",
+      "matchValue" : "[\\s\\S]+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "name" : "有道笔记 by lovexl",
+  "locations" : [
+    {
+      "method" : "POST",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "method=status",
+      "host" : "note.youdao.com",
+      "path" : "\/yws\/mapi\/payment"
+    }
+  ]
+}
