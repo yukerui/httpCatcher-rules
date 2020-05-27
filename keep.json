@@ -1,0 +1,44 @@
+{
+  "rules" : [
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "inSuit\": true",
+      "matchValue" : "inSuit\":\\s*\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "membership\": true",
+      "matchValue" : "membership\":\\s*\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    },
+    {
+      "action" : "body",
+      "matchField" : "",
+      "field" : "",
+      "value" : "isMembership\": true",
+      "matchValue" : "isMembership\":\\s*\\w+",
+      "destiontion" : "response",
+      "isRegex" : true
+    }
+  ],
+  "enabled" : true,
+  "name" : "Keep",
+  "locations" : [
+    {
+      "method" : "GET",
+      "scheme" : "https",
+      "enabled" : true,
+      "port" : 443,
+      "query" : "",
+      "host" : "api.gotokeep.com",
+      "path" : "\/training\/v2\/exercises\/*\/dynamic"
+    }
+  ]
+}
