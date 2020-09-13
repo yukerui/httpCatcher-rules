@@ -7,6 +7,3 @@ httpCathcer规则，使用方法：更多->重写->右上角+新建 ->在文本�
 [Loon规则](https://github.com/yukerui/Loon-rules)
 
 [教程地址](https://blog.930113.xyz), 救救孩子吧，博客根本没人看
-
-不会提issues的可以来群里聊聊，公众号：一个小花生    qq群号：1034788765
-![qq群号](https://s1.ax1x.com/2020/05/16/Yyo0vd.jpg)
